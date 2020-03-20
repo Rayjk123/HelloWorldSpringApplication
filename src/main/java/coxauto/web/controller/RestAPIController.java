@@ -6,13 +6,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WebPageController {
+public class RestAPIController {
 
+    // Example of Get API
     @GetMapping("/helloWorld")
     public String helloWorld() {
         return "helloWorld";
     }
 
+    // Example of Post API
     @PostMapping("/helloWorld")
     public String getPostData(@RequestBody String requestData) {
         return requestData;
